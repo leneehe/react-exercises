@@ -27,7 +27,9 @@ function App() {
   const completeTask = (id) => {
     setTodoList(
         todoList.map((task) => {
-        if (task.id === id) task.isComplete = true;
+        if (task.id === id) {
+          return {...task, isComplete: true};
+        }
         return task
       })
     )
