@@ -6,7 +6,7 @@ import Axios from 'axios';
 export const Home = () => {
     const {username} = useContext(AppContext);
 
-    const {data, isLoading, isError} = useQuery({
+    const {data: fact, isLoading, isError, refetch} = useQuery({
         queryKey: ['repoData'],
         queryFn: () =>
           Axios.get('https://catfact.ninja/fact').then((res) =>
@@ -19,8 +19,9 @@ export const Home = () => {
             <h1>This is the HOME PAGE</h1>
             <p>The user is {username}</p>
             {isLoading && <p>Loading cat fact...</p>}
-            {!isLoading && !isError && <p>{data?.fact}</p>}
+            {!isLoading && !isError && <p>{fact?.fact}</p>}
             {isError && <p>Sorry, there was an error.</p>}
+            <button onClick={refetch}>Update data</button>
         </>
     )
 }
