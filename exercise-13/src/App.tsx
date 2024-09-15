@@ -4,7 +4,7 @@ import { Person } from './components/Person';
 function App() {
   return (
     <div className="App">
-      <Person name="Lena" age={35} email="lena@reacttest.com" isMarried={false} friends={["Predro", "Janet", "Richard", "Polka", "Ping"]} />
+      <Person name="Lena" age={35} email="lena@react.com" isMarried={false} friends={["Ping", "Polka", "Mason", "Richard"]}/>
     </div>
   );
 }
