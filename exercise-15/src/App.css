@@ -1,38 +1,64 @@
+body {
+  margin: 0
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page, .login-page {
+  padding-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-page p, .login-page p {
+  color: #333333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-page button {
+  border: 0;
+  background-color: #1C51DA;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #1C51DA;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar a {
+  color: white;
+  margin-left: 25px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.userInfo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.userInfo p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.userInfo img {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userInfo button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: white;
+  color: #333333;
+  font-weight: 600;
+  margin-right: 10px;
 }

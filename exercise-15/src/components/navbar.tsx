@@ -11,15 +11,18 @@ export const Navbar = () => {
     }
 
     return (
-        <div>
-            <Link to="/"> Home</Link>
-            <Link to="/login"> Login </Link>
-
+        <div className='navbar'>
+            <div></div>
             <div>
+                <Link to="/"> Home</Link>
+                <Link to="/login"> Login </Link>
+            </div>
+
+            <div className='userInfo'>
                 { user && (
                 <>
                     <p>{user?.displayName} - {user?.email}</p>
-                    <img src={user?.photoURL || ""} width="100" height="100" />
+                    <img src={user?.photoURL || ""} width="30" height="30" />
                     <button onClick={logout}>Log Out</button>
                 </>
                 )}

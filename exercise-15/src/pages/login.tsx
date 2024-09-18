@@ -6,13 +6,17 @@ export const Login = () => {
     const navigate = useNavigate();
 
     const signInWithGoogle = async () => {
-        const result = await signInWithPopup(auth, provider);
-        console.log(result)
-        navigate('/')
+        try {
+            const result = await signInWithPopup(auth, provider);
+            console.log(result)
+            navigate('/')
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
-        <div> 
+        <div className="login-page"> 
             <p>Sign in with Google to continue</p>
             <button onClick={signInWithGoogle}>Sign in with Google</button>
         </div>
