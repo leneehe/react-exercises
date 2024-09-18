@@ -5,7 +5,7 @@ body {
   text-align: center;
 }
 
-.home-page, .login-page {
+.home-page, .login-page, .create-post {
   padding-top: 30px;
 }
 
