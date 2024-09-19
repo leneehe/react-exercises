@@ -9,6 +9,11 @@ body {
   padding-top: 30px;
 }
 
+.create-post {
+  display: flex;
+  justify-content: center;
+}
+
 .home-page p, .login-page p {
   color: #333333;
 }
@@ -61,4 +66,32 @@ body {
   color: #333333;
   font-weight: 600;
   margin-right: 10px;
+}
+
+.create-form {
+  width: 40%;
+  padding: 30px;
+  background-color: #D8EEFF;
+  border-radius: 10px;
+}
+
+.create-form input[type="submit"] {
+  background-color: #1C51DA;
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color:white;
+  cursor: pointer;
+}
+
+.create-form input[type="submit"]:hover {
+  background-color: #1C51DADE;
+}
+
+.create-form input[type="text"], .create-form textarea {
+  background-color: #1C51DA1F;
+  border: 0;
+  border-radius: 6px;
+  padding: 14px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
