@@ -7,6 +7,7 @@ body {
 
 .home-page, .login-page, .create-post {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .create-post {
