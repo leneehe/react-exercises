@@ -47,7 +47,7 @@ export const Post = (props: Props) => {
             const likeToDeleteData = await getDocs(likeToDeleteQuery)
 
             const likeId = likeToDeleteData.docs[0].id;
-            const likeToDelete = doc(db, "likes", likeToDeleteData.docs[0].id)
+            const likeToDelete = doc(db, "likes", likeId)
 
             await deleteDoc(likeToDelete)
             
